@@ -16,21 +16,6 @@
     <br>
     <div>
         <p>We're not quite ready for launch just yet.  Sign up for our mailing list to get the latest updates.</p> 
-        <form method="post" action="//submit.form" onSubmit="return validateForm();">
-          <div style="max-width: 400px;">
-          </div>
-          <div style="padding-bottom: 18px;font-size : 24px;">Mailing List Subscription</div>
-          <div style="display: flex; padding-bottom: 18px;max-width : 450px;">
-          </div><div style="padding-bottom: 18px;">Email<span style="color: red;"> *</span><br/>
-          <input type="text" id="data_4" name="data_4" style="max-width : 450px;" class="form-control"/>
-          </div>
-          <div style="padding-bottom: 18px;"><br/>
-          <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Subscribe" type="submit"/></div>
-          <div>
-          <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
-          <script src="https://www.100forms.com/js/FORMKEY:7Y6YT2U93A28/SEND:jacob@playapollo.app" type="text/javascript"></script>
-          </div>
-          </form>
         <p>In the meantime, please view our demo down below.  We hope to see you again soon.</p>
         <p>&mdash; The Apollo Team</p></p>
         <video width="960" height="540" controls>
@@ -38,22 +23,3 @@
         </video>
     </div>
   </body>
-
-  <script type="text/javascript">
-    function validateForm() {
-    if (isEmpty(document.getElementById('data_4').value.trim())) {
-    alert('Email is required!');
-    return false;
-    }
-    if (!validateEmail(document.getElementById('data_4').value.trim())) {
-    alert('Email must be a valid email address!');
-    return false;
-    }
-    return true;
-    }
-    function isEmpty(str) { return (str.length === 0 || !str.trim()); }
-    function validateEmail(email) {
-    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-    return isEmpty(email) || re.test(email);
-    }
-    </script>
